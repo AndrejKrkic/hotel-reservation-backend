@@ -1,32 +1,41 @@
-# Hotel Booking App - Backend
+# Hotel Reservation System - ASP.NET Backend
 
-This is the backend part of the Hotel Booking App built with **ASP.NET Core** and **Entity Framework Core**. It provides a RESTful API for managing hotel rooms, reservations, users, and more.
+This is the backend service for the Hotel Reservation web application.
+
+It provides RESTful APIs for managing users, rooms, reservations, and authentication.
+
+The application is built using ASP.NET and Entity Framework, following clean architecture principles.
+
+------------------------------------------------------------------------
 
 ## 🚀 Features
 
-- Room listing and details
-- Room availability check
-- Reservation creation
-- Basic promo code system
-- Entity Framework Core integration with SQL Server
+-   🔐 User authentication (Login/Register)
+-   🏨 Room management
+-   📅 Reservation system
+-   👤 User profile management
+-   🔄 CRUD operations for all entities
+-   🛡️ Secure API endpoints
 
-## 🛠️ Technologies Used
+------------------------------------------------------------------------
+
+## 🛠️ Tech Stack
 
 - ASP.NET Core Web API (.NET 6+)
 - Entity Framework Core
 - SQL Server
-- AutoMapper
-- Dependency Injection
+- JWT Authentication
 - Swagger / OpenAPI
 - CORS policy setup for frontend communication
+- LINQ
+
+------------------------------------------------------------------------
 
 ## 📦 Installation & Setup
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/hotel-booking-backend.git
-   cd hotel-booking-backend
+   ```git clone https://github.com/AndrejKrkic/hotel-reservation-backend.git```
 
 2. Open the solution in Visual Studio or run from CLI.
 
@@ -36,5 +45,40 @@ This is the backend part of the Hotel Booking App built with **ASP.NET Core** an
 }
 
 4. Apply migrations and create the database:
+```dotnet ef database update```
 
-5. Run the application: dotnet run
+5. Run the application: 
+```dotnet run```
+
+------------------------------------------------------------------------
+
+## 🔑 API Endpoints (Examples)
+
+### Authentication
+
+-   POST /api/auth/register
+-   POST /api/auth/login
+
+### Rooms
+
+-   GET /api/rooms
+-   POST /api/rooms
+-   PUT /api/rooms/{id}
+-   DELETE /api/rooms/{id}
+
+### Reservations
+
+-   GET /api/reservations
+-   POST /api/reservations
+
+------------------------------------------------------------------------
+
+## 🔗 Related Repositories
+
+Frontend: https://github.com/AndrejKrkic/hotel-reservation-frontend.git
+
+------------------------------------------------------------------------
+
+## 📬 Contact
+
+LinkedIn: https://www.linkedin.com/in/andrej-krkic-862805265/
