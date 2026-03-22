@@ -52,6 +52,21 @@ The application is built using ASP.NET and Entity Framework, following clean arc
 
 ------------------------------------------------------------------------
 
+## 📁 Project Structure
+
+DTO/ - Data Transfer Objects used for communication between layers
+
+Services/ - Business logic and application use cases
+
+Data/ - Database context and Entity Framework configuration
+
+Models/ - Domain entities representing core business data
+
+Migrations/ - Database schema changes and versioning
+
+
+------------------------------------------------------------------------
+
 ## 🔑 API Endpoints (Examples)
 
 ### Authentication
@@ -70,6 +85,25 @@ The application is built using ASP.NET and Entity Framework, following clean arc
 
 -   GET /api/reservations
 -   POST /api/reservations
+
+------------------------------------------------------------------------
+## 📚 What I Learned
+
+- Designing and building RESTful APIs using ASP.NET Core
+
+- Structuring a backend project using clean and maintainable architecture principles
+
+- Working with Entity Framework Core for database access and data modeling
+
+- Implementing CRUD operations and managing relational data
+
+- Handling user authentication and authorization using JWT tokens
+
+- Managing application configuration and environment settings
+
+- Using LINQ for efficient data querying
+
+- Debugging and testing API endpoints using Swagger and Postman
 
 ------------------------------------------------------------------------
 
